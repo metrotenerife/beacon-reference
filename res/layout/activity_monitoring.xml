@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MonitoringActivity" >
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <Button
+                android:id="@+id/Button01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onRangingClicked"
+                android:text="@string/btn_start_ranging" />
+        
+            <Button
+                android:id="@+id/range_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="onBackgroundClicked"
+                android:text="@string/btn_background_mode" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        
+	        <TextView
+	                 android:id="@+id/tv_scanning_period"
+	                 android:layout_width="wrap_content"
+	                 android:layout_height="wrap_content"
+	                 android:text="@string/tv_scanning_period"
+	                 android:tag="mpower" />
+	
+	        <EditText
+	            android:id="@+id/txt_scanning_period"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:ems="10" >
+	
+	            <requestFocus />
+	        </EditText>
+
+        </LinearLayout>
+        
+        <SeekBar
+            android:id="@+id/sb_scanning_period"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/tv_nearest_beacon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin"
+            android:text="@string/tv_nearest_beacon" />
+        
+        <ListView
+            android:id="@+id/lv_beacons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginRight="@dimen/right_margin" >
+	
+	    </ListView>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+		    
+		    <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/left_margin"
+                android:layout_marginRight="@dimen/right_margin"
+                android:text="@string/tv_monitoring" />
+		    
+		    <EditText
+		        android:id="@+id/monitoringText"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:gravity="left|top"
+		        android:inputType="textMultiLine" >
+		
+		    </EditText>
+		
+		</LinearLayout>
+
+   
+</LinearLayout>

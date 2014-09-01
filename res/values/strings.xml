@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">BeaconReference</string>
+    <string name="btn_start_ranging">Start Ranging</string>
+    <string name="btn_background_mode">Background Mode</string>
+    <string name="tv_monitoring">Monitoring Events:</string>
+    <string name="tv_nearest_beacon">Nearest beacon:</string>
+    <string name="tv_scanning_period">Scanning Foreground Period (s): </string>
+    
+</resources>
